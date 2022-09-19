@@ -12,6 +12,7 @@ export class ToDo {
   // TODO this is where you left off showing the done and not done items 
   get ToDoTemplate() {
     return/*html*/`
+    <div>${this.completed}</div>
 <div class="form-check">
               <input class="form-check-input" type="checkbox"  id="description" onchange="app.todoController.todoCheck('${this.id}')"${this.completed ? 'checked' : ''}>
               <label onchange="app.todoController.todoCheck('${this.id}')"class="form-check-label" id="description">
