@@ -10,7 +10,7 @@ function _drawToDo() {
   appState.todo.forEach(t => template += t.ToDoTemplate)
   appState.todo.length
 
-
+  setHTML('todoCompleted', appState.todo.length)
   setHTML('todo', template)
 
 

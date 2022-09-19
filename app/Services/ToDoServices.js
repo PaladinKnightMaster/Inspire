@@ -27,7 +27,7 @@ class ToDoService {
   }
 
   async todoCheck(id) {
-    const todo = sandboxServer.find(t => t.id == id)
+    const todo = appState.todo.find(todo => todo.id == id)
     if (!todo) {
       throw new Error('bad id')
     }
