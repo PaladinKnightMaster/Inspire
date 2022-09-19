@@ -1,1 +1,14 @@
 /* BASIC STYLES HERE */
+body {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-shadow {
+  color: aliceblue;
+  text-shadow: 1px 1px rgba(15, 14, 14, 0.592), 0px 0px 5px rgba(182, 115, 28, 0.8);
+  font-weight: bold;
+
+}

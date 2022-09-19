@@ -1,6 +1,6 @@
 // @ts-ignore
 export const sandboxServer = new axios.create({
-  baseURl: 'https://bcw-sandbox.herokuapp.com/',
-  timeout: 4000,
+  baseURL: 'https://bcw-sandbox.herokuapp.com/api/',
+  timeout: 6000,
 
 })

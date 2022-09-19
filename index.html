@@ -21,42 +21,44 @@
 
 <body>
   <main>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="container-fluid">
-      <div class="row" id="todo">
-
-        <form class="col-2 card d-flex flex-wrap flex-row justify-content-between">
-          <p>title</p>
-          <p>4 left</p>
-          <div class="card-body">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                <ul>${this.description}</ul>
-              </label>
-        </form>
-        <form onsubmit="app.ToDoController.getToDo()">
-          <input class="form-input" type="text" name="description" placeholder="add Todo" required minLength="3">
-          <button class="btn" type="submit"></button>
-        </form>
+      <div class="row">
+        <div class="col-md " id="photo"> </div>
+        <div class="col-md" id="weather"></div>
       </div>
     </div>
 
+    <div class="container-fluid">
+      <div class="row" id="time">
+        <div class="col-md d-flex justify-content-center">
+          <h1 id="clock" onload="currentTime()" class="text-shadow p-5 m-5">
+          </h1>
+        </div>
+      </div>
     </div>
-    </div>
+    <!-- NOTE quote and todo list  -->
 
+    <div class="container-fluid">
+      <div class="row align-self-end">
+        <div class="col-md justify-content-center p-2 m-2" id="quotes">
+        </div>
+        <div class="card col-md d-flex align-self-end">
+          <div class="d-flex justify-content-between">
+            <p>ToDo</p>
+            <p>4 left</p>
+          </div>
+          <div class=" card-body">
+            <div>
+              <ul id="todo"> </ul>
+            </div>
+          </div>
+          <form onsubmit="app.todoController.createToDo()">
+            <input class="input" type="text" name="description" placeholder="add Todo" required minLength="3">
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
 
 
